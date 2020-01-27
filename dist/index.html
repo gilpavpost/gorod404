@@ -9,18 +9,19 @@
     <title>Квадраты - Тех работы</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<!-- <body> -->
+
 <body onload="refresh();">
-<header class="header wrapper">
-    <img class="logo" src="img/logo.svg" alt="logo">
-    <div class="slogan">Поисковая система по всей недвижимости в России</div>
+    
+<header class="header wrapper ">
+    <img class="header__logo" src="img/logo.svg" alt="logo">
+    <div class="header__slogan">Поисковая система по всей недвижимости в России</div>
 </header>
 <hr class="separator">
 
-<main class="main wrapper">
+<main class="main wrapper ">
     <div class="b-content__text">
 
-        <div class="b-content__text_size_xxl mb">Ой!</div>
+        <div class="b-content__text_size_xxl">Ой!</div>
         <div class="b-content__text_size_xl mb">Вы застали нас в расплох</div>
         <div class="b-content__text_size_x mb">В данный момент наши специалисты
 
@@ -32,7 +33,7 @@
         <div class="b-content__text_size_s mb">Период обновления по регламенту — 30 минут, но обычно происходит
             гораздо быстрее.
             Пожалуйста, наберитесь терпения и возвращайтесь через несколько минут.</div>
-        <input id="btn_refresh" onclick='window.location.reload()' type="button" class="btn btn_refresh"
+        <input id="btn_refresh" onclick='window.location.reload()' type="button" class="btn btn_blue"
             value="Обновить страницу">
         <span id='timer' class="timer timer_theme-blue"></span>
     </div>

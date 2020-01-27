@@ -14,7 +14,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('code', function() {
-    return gulp.src('app/*.*')
+    return gulp.src('app/**/**/*.*')
         .pipe(browserSync.reload({ stream: true }))
 });
 

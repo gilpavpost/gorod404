@@ -1,6 +1,7 @@
 
 
-$primary_color: #35373B
+$text_primary_color: #35373B
+$text_second_color: #828282
 $margin_bottom: 20px
 
 
@@ -8,54 +9,83 @@ $margin_bottom: 20px
 .main
     flex: 1
     display: flex
+    min-height: 75vh
     flex-direction: row
     align-items: center
-    &_mr
-        margin-right: 40px
+    flex-basis: auto  
     
-    
-
+   
 .mb 
     margin-bottom: 20px
     @media only screen and (max-width: 375px) 
             margin-bottom: 10px;
-    
 
 .b-content__text 
-    display: inline-block
-    color: $primary_color
-    font-size: 1em
+    
+    color: $text_primary_color
+    font-family: 'Lato', sans-serif
+    font-weight: normal
+    font-size: 15px
 
-.b-content__text_size_xxl 
-    font-weight: bold;
-    font-size: 90px;
-    line-height: 108px;
+    &_huge
+        font-size: 90px
+        
+    &_large
+        font-size: 32px
+        line-height: 38px
+    &_medium
+        font-size: 22px
+        line-height: 29px
+    &_tiny
+        font-size: 15px
+        line-height: 146%
 
-.b-content__text_size_xl 
+.bold
+    @extend .b-content__text
     font-weight: bold
-    font-size: 32px
-    line-height: 38px
 
-.b-content__text_size_x 
-    font-size: 22px
-    line-height: 29px
- 
-.b-content__text_size_x_underline 
+.underline
+    display: inline-block
+    @extend .b-content__text
     border-bottom: 2px solid
 
-.b-content__text_size_s 
-    font-size: 15px
-    color: #828282
-    line-height: 146%
+.second-color
+    @extend .b-content__text
+    color: $text_second_color
 
 
+
+
+
+
+// .b-content__text_size_xxl 
+//     font-weight: bold;
+//     font-size: 90px;
+//     line-height: 108px;
+
+// .b-content__text_size_xl 
+//     font-weight: bold
+//     font-size: 32px
+//     line-height: 38px
+
+// .b-content__text_size_x 
+//     font-size: 22px
+//     line-height: 29px
+ 
+// .b-content__text_size_x_underline 
+//     border-bottom: 2px solid
+
+// .b-content__text_size_s 
+//     font-size: 15px
+//     color: #828282
+//     line-height: 146%
 
 
 
 .b-content__img
-        width: auto;
-        height: 100%;
-        @media only screen and (max-width: 1170px) 
-            display: none;
+        width: auto
+        height: 100%
+        @media only screen and (max-width: 1190px) 
+            display: none
         
     

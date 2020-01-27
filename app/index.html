@@ -9,34 +9,36 @@
     <title>Квадраты - Тех работы</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<!-- <body> -->
+
 <body onload="refresh();">
+    
 <header class="header wrapper">
-    <img class="logo" src="img/logo.svg" alt="logo">
-    <div class="slogan">Поисковая система по всей недвижимости в России</div>
+    <img class="header__logo" src="img/logo.svg" alt="logo">
+    <div class="header__slogan">Поисковая система по всей недвижимости в России</div>
 </header>
 <hr class="separator">
 
-<main class="main wrapper">
+<main class="main wrapper ">
     <div class="b-content__text">
 
-        <div class="b-content__text_size_xxl mb">Ой!</div>
-        <div class="b-content__text_size_xl mb">Вы застали нас в расплох</div>
-        <div class="b-content__text_size_x mb">В данный момент наши специалисты
+        <div class="b-content__text_huge bold">Ой!</div>
+        <div class="b-content__text_large bold mb">Вы застали нас в расплох</div>
+        <div class="b-content__text_medium mb">В данный момент наши специалисты
 
-            <span class="b-content__text b-content__text_size_x_underline"> 
+            <span class="b-content__text_medium underline"> 
                 работают над
                 обновлением
             </span>
             программного обеспечения.</div>
-        <div class="b-content__text_size_s mb">Период обновления по регламенту — 30 минут, но обычно происходит
+        <div class="b-content__text_tiny second-color mb">Период обновления по регламенту —
+             <span class="b-content__text_tiny second-color bold">30 минут</span>, но обычно происходит
             гораздо быстрее.
             Пожалуйста, наберитесь терпения и возвращайтесь через несколько минут.</div>
-        <input id="btn_refresh" onclick='window.location.reload()' type="button" class="btn btn_refresh"
+        <input id="btn_refresh" onclick='window.location.reload()' type="button" class="btn btn_blue"
             value="Обновить страницу">
         <span id='timer' class="timer timer_theme-blue"></span>
     </div>
-    <div><img class="b-content__img" src="img/404_img.png" alt="404 page"></div>  
+    <div><img class="b-content__img " src="img/404_img.png" alt="404 page"></div>  
 </main>
 
 <hr class="separator">
