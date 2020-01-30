@@ -1,12 +1,27 @@
-.footer 
-    height: 94px
+.footer
+    width: 100%
     display: flex
-    justify-content: space-between
-    align-items: center
-    
-
-.footer__label 
-    font-size: 16px
-    line-height: 31px
-    color: #72757D
-    font-family: Lato
+    justify-content: center
+    height: 90px
+    background-color: #FFFFFF
+    &_border-top
+        border-top: 1px solid #ECECF0
+    &__wrapper
+        display: flex
+        width: 100%
+        padding: 10px     
+        align-items: center  
+        justify-content: space-between
+        flex-direction: row
+        @media ( min-width: 768px ) { width: 80%; }
+        @media ( min-width: 1200px ) { width: 1170px;  }
+    &__icons
+        padding: 0 5px
+    &__copyright
+        font-family: 'Lato', sans-serif
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 31px;
+        color: #72757D;
+        

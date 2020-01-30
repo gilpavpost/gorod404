@@ -1,61 +1,31 @@
-
-
-$primary_color: #35373B
-$margin_bottom: 20px
-
-
-
 .main
-    flex: 1
+    width: 100%
     display: flex
-    flex-direction: row
-    align-items: center
-    &_mr
-        margin-right: 40px
-    
-    
-
-.mb 
-    margin-bottom: 20px
-    @media only screen and (max-width: 375px) 
-            margin-bottom: 10px;
-    
-
-.b-content__text 
-    display: inline-block
-    color: $primary_color
-    font-size: 1em
-
-.b-content__text_size_xxl 
-    font-weight: bold;
-    font-size: 90px;
-    line-height: 108px;
-
-.b-content__text_size_xl 
-    font-weight: bold
-    font-size: 32px
-    line-height: 38px
-
-.b-content__text_size_x 
-    font-size: 22px
-    line-height: 29px
- 
-.b-content__text_size_x_underline 
-    border-bottom: 2px solid
-
-.b-content__text_size_s 
-    font-size: 15px
-    color: #828282
-    line-height: 146%
-
-
-
-
-
-.b-content__img
-        width: auto;
-        height: 100%;
-        @media only screen and (max-width: 1170px) 
-            display: none;
+    justify-content: center
+    flex: 1 0 auto
+    background-color: #FFFFFF
+    min-height: auto
+    &__wrapper
+        display: flex 
+        width: 100%
+        padding: 10px
+        align-items: center
+        justify-content: space-between
+        @media ( min-width: 768px ) { width: 80%;}
+        @media ( min-width: 1200px ) { width: 1170px; }
+    &__article
+        width: 100%
+        margin: 0px
+        @media only screen and (min-width: 1170px) 
+                 margin-right: 50px; padding: 0px;
+        @media only screen and (min-width: 768px) 
+                width: 80%;
+    &__image
+            width: 600px;
+            height: 526px;
+            @media only screen and (max-width: 1170px) 
+                display: none;   
+    &__btn
+        margin-top: 30px
+        margin-right: 30px
         
-    

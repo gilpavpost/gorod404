@@ -5,16 +5,16 @@ var autoprefixer = require('gulp-autoprefixer');
 var clean = require('gulp-clean');
 
 gulp.task('sass', function() {
-    return gulp.src('app/components/style.+(scss|sass)')
+    return gulp.src('app/components/styles.+(scss|sass)')
         /*     .pipe(sass()) */
         .pipe(sass({ outputStyle: 'extended' }).on('error', sass.logError))
-        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 10', 'ie 11'], { cascade: true }))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('code', function() {
-    return gulp.src('app/*.*')
+    return gulp.src('app/**/**/*.*')
         .pipe(browserSync.reload({ stream: true }))
 });
 

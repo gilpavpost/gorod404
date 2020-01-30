@@ -1,7 +1,7 @@
 
+
 var sec=00;
-// выставляем минуты
-var min=30;
+var min=timer.getAttribute('data-time');
 
 function refresh()
 {

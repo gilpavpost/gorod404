@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Квадраты - Тех работы</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Технические работы </title>
 </head>
-<!-- <body> -->
-<body onload="refresh();">
-<header class="header wrapper">
-    <img class="logo" src="img/logo.svg" alt="logo">
-    <div class="slogan">Поисковая система по всей недвижимости в России</div>
-</header>
-<hr class="separator">
 
-<main class="main wrapper">
-    <div class="b-content__text">
+<body class="page" onload="refresh();">
+ 
 
-        <div class="b-content__text_size_xxl mb">Ой!</div>
-        <div class="b-content__text_size_xl mb">Вы застали нас в расплох</div>
-        <div class="b-content__text_size_x mb">В данный момент наши специалисты
+    <header class="header page__header header_border-bottom">
+        <div class="header__wrapper">
+            <img class="header__logo" src="img/logo.svg" alt="company logo">
+            <span class="header__slogan">Поисковая система по всей недвижимости в России</span>
 
-            <span class="b-content__text b-content__text_size_x_underline"> 
-                работают над
-                обновлением
-            </span>
-            программного обеспечения.</div>
-        <div class="b-content__text_size_s mb">Период обновления по регламенту — 30 минут, но обычно происходит
-            гораздо быстрее.
-            Пожалуйста, наберитесь терпения и возвращайтесь через несколько минут.</div>
-        <input id="btn_refresh" onclick='window.location.reload()' type="button" class="btn btn_refresh"
-            value="Обновить страницу">
-        <span id='timer' class="timer timer_theme-blue"></span>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="main__article">
+                <div class="text_huge text_bold">Ой!</div>
+                <div class="text_large text_bold ">Вы застали нас в расплох</div>
+                <div class="text_medium ">В данный момент наши специалисты
+
+                    <span class="text_medium text_underline">
+                        работают над
+                        обновлением
+                    </span>
+                    программного обеспечения.</div>
+                <div class="text_tiny text_second-color ">Период обновления по регламенту —
+                    <span class="text_tiny text_second-color text_bold">30 минут</span>, но обычно происходит
+                    гораздо быстрее.
+                    Пожалуйста, наберитесь терпения и возвращайтесь через несколько минут.</div>
+
+                <input onclick='window.location.reload()' type="button" class="btn btn_theme-blue main__btn"
+                    value="Обновить страницу">
+                <span id='timer' data-timer="30" class="timer timer_theme-blue"></span>
+            </div>
+
+            <img class="main__image" src="img/404_img.png" alt="404 image">
+        </div>
+    </main>
+
+    <footer class="footer footer_border-top">
+        <div class="footer__wrapper">
+            <span class="footer__copyright">© Gorodkvadratov</span>
+            <div class="footer__icon-block">
+                <img class="footer__icons" src="img/fb.svg" alt="">
+                <img class="footer__icons" src="img/vk_ico.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
     </div>
-    <div><img class="b-content__img" src="img/404_img.png" alt="404 page"></div>  
-</main>
-
-<hr class="separator">
-
-<footer class="footer wrapper">
-    <div class="footer__label">© Gorodkvadratov</div>
-    <div>
-        <img src="img/fb.svg" alt="FBlogo">
-        <img src="img/vk_ico.svg" alt="VKlogo">
-    </div>
-</footer>
-
-    <script src="js/timer.js"></script>
+    <script type="text/javascript" src="js/timer.js"></script>
 </body>
 
 </html>
