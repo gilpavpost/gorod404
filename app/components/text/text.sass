@@ -1,0 +1,39 @@
+
+.text 
+    color: #35373B
+    font-family: 'Lato', sans-serif
+    font-weight: normal
+    font-size: 15px
+    &_huge
+        font-size: 90px
+        
+    &_large
+        font-size: 32px
+        line-height: 38px
+    &_medium    /// без экстенда не рендерился !!!sic
+        @extend .text
+        font-size: 22px
+        line-height: 29px
+        // font-weight: normal
+        // font-size: 22px
+        // line-height: 29px
+      
+       
+    &_tiny
+        font-size: 15px
+        line-height: 146%
+    &_bold
+        @extend .text
+        font-weight: bold
+
+    &_underline
+        display: inline-block
+        @extend .text
+        border-bottom: 1px solid
+        white-space: nowrap
+
+    &_second-color
+         @extend .text
+         color: #828282
+    &_margin
+        margin-bottom: 10px
